@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Creating an accessible modal</h1>
+    </header>
+    <main>
+      <div id="overlay"></div>
+      <button label="View resources" class="resources">View resources</button>
+      <div
+        role="dialog"
+        class="resourceModal"
+        aria-labelledby="dialog-title"
+        aria-hidden="false"
+      >
+        <div class="modal-header">
+          <div
+            tabindex="0"
+            role="button"
+            class="closeBtn"
+            aria-label="exit-dialog"
+          >
+            <span role="none" class="cross">×</span>
+          </div>
+          <h1 id="dialog-title">Accessibility Resources</h1>
+        </div>
+        <div class="modal-content">
+          <p>There are a number of resources already available to help you.</p>
+          <ul>
+            <li>
+              <a href="https://www.udacity.com/course/web-accessibility--ud891">
+                Udacity course by Google:</a
+              >
+              a basic course on how to improve your code for use with screen
+              readers
+            </li>
+            <li>
+              <a href="https://www.w3.org/TR/wai-aria-practices/#read_me_first">
+                Aria Guidelines:</a
+              >
+              general guidelines on ARIA, including when and where to use
+              certain roles
+            </li>
+            <li>
+              <a href="https://colorable.jxnblk.com/000000/00ffc4"
+                >Colorable:</a
+              >
+              check how readable your font and background colour choices are.
+            </li>
+            <li>
+              <a href="https://inclusive-components.design/menus-menu-buttons/"
+                >Inclusive Component Design:</a
+              >
+              see ARIA in use in examples. This site has a lot of handy info
+              about how to get around common issues for common components.
+            </li>
+            <li>
+              'Web Accessibility' extension for VS Code: provides warnings in
+              the terminal whenever accessibility adjustemnts are recommended.
+            </li>
+            <li>
+              <a href="http://validator.w3.org/nu/">'Nu' HTML validator:</a>
+              validates HTML and checks for basic accessibility features
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
