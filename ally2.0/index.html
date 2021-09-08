@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A11y Modal 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>A11y modal 2.0</h1>
+    </header>
+    <nav><a href="#content">Content</a><a href="#content2">Content 2</a></nav>
+    <main id="main">
+      <button label="Open modal" id="open-dialog">Open modal</button>
+      <div
+        id="dialog"
+        role="dialog"
+        aria-labelledby="dialog-title"
+        aria-describedby="dialog-description"
+        tabindex="-1"
+        hidden
+      >
+        <form class="dialog-content">
+          <header>
+            <h1 id="dialog-title">Name Entry</h1>
+            <p id="dialog-description">Please enter your full name.</p>
+          </header>
+          <section>
+            <label for="within-dialog">Name</label> <input id="within-dialog" />
+          </section>
+          <footer>
+            <button type="button" id="close-dialog">Close</button>
+            <button type="submit" id="save-dialog">Save</button>
+          </footer>
+        </form>
+      </div>
+      <section id="content">
+        <h2>Content</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ea
+          laboriosam deleniti numquam dolorum accusamus reprehenderit reiciendis
+          similique, placeat nesciunt sapiente. Dolores optio architecto amet
+          modi quod quidem. Quos obcaecati repellat iusto porro a aperiam natus,
+          neque unde saepe laborum consequuntur delectus corporis repudiandae
+          voluptatibus nobis nulla vel quo veritatis? Expedita laboriosam ipsum
+          itaque veniam repellendus. Sed harum impedit, minus, laborum quod
+          illum doloremque consectetur, voluptatibus tenetur sit aut! Ex esse
+          voluptas facere nihil repudiandae quisquam totam natus eius. Ratione
+          perferendis amet ex blanditiis nesciunt esse, non, consequuntur fugit,
+          voluptates exercitationem suscipit facilis cumque eum repellat cum
+          rerum est quasi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, id
+          repellendus illum totam nobis sequi ut natus quisquam earum, maxime ab
+          eligendi laudantium reprehenderit iste labore assumenda eveniet.
+          Voluptate, error, perspiciatis nostrum atque vero quidem nulla eveniet
+          adipisci vel mollitia aspernatur. Doloremque pariatur atque non rem
+          architecto accusamus quos illo enim facere! Aut rerum eum perferendis
+          repudiandae culpa veritatis laborum labore perspiciatis eaque ipsa,
+          nulla, exercitationem fugit reiciendis sunt error incidunt cupiditate
+          deserunt quos magni totam consequatur iure esse illum. Necessitatibus
+          quas quibusdam earum porro nam! Nostrum fugit nobis voluptatibus
+          dignissimos neque? Velit omnis dolores adipisci. Est, laboriosam! In
+          facere numquam optio laboriosam labore nisi, minus quibusdam
+          consequuntur ea eius atque repellendus expedita laudantium quod omnis
+          nostrum aliquid itaque, rerum quidem. Eum ipsum dolorem dignissimos
+          saepe voluptate consequatur praesentium ullam, voluptatibus, aperiam
+          corporis nam molestias debitis non veritatis neque. Dicta totam sunt,
+          quisquam labore adipisci laudantium dolore nihil libero, commodi
+          doloribus eius mollitia voluptate necessitatibus neque temporibus
+          dolor eos autem, voluptatem ipsa magni consequatur doloremque. Odio at
+          nobis voluptate? Facere animi eius iure quidem saepe nemo consequatur
+          odit vero vitae similique magni ea, cupiditate cumque est veniam.
+          Totam, est repudiandae, unde veniam aliquam magni quibusdam explicabo
+          laboriosam distinctio iusto iste.
+        </p>
+      </section>
+      <section id="content2">
+        <h2>Content 2</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ea
+          laboriosam deleniti numquam dolorum accusamus reprehenderit reiciendis
+          similique, placeat nesciunt sapiente. Dolores optio architecto amet
+          modi quod quidem. Quos obcaecati repellat iusto porro a aperiam natus,
+          neque unde saepe laborum consequuntur delectus corporis repudiandae
+          voluptatibus nobis nulla vel quo veritatis? Expedita laboriosam ipsum
+          itaque veniam repellendus. Sed harum impedit, minus, laborum quod
+          illum doloremque consectetur, voluptatibus tenetur sit aut! Ex esse
+          voluptas facere nihil repudiandae quisquam totam natus eius. Ratione
+          perferendis amet ex blanditiis nesciunt esse, non, consequuntur fugit,
+          voluptates exercitationem suscipit facilis cumque eum repellat cum
+          rerum est quasi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, id
+          repellendus illum totam nobis sequi ut natus quisquam earum, maxime ab
+          eligendi laudantium reprehenderit iste labore assumenda eveniet.
+          Voluptate, error, perspiciatis nostrum atque vero quidem nulla eveniet
+          adipisci vel mollitia aspernatur. Doloremque pariatur atque non rem
+          architecto accusamus quos illo enim facere! Aut rerum eum perferendis
+          repudiandae culpa veritatis laborum labore perspiciatis eaque ipsa,
+          nulla, exercitationem fugit reiciendis sunt error incidunt cupiditate
+          deserunt quos magni totam consequatur iure esse illum. Necessitatibus
+          quas quibusdam earum porro nam! Nostrum fugit nobis voluptatibus
+          dignissimos neque? Velit omnis dolores adipisci. Est, laboriosam! In
+          facere numquam optio laboriosam labore nisi, minus quibusdam
+          consequuntur ea eius atque repellendus expedita laudantium quod omnis
+          nostrum aliquid itaque, rerum quidem. Eum ipsum dolorem dignissimos
+          saepe voluptate consequatur praesentium ullam, voluptatibus, aperiam
+          corporis nam molestias debitis non veritatis neque. Dicta totam sunt,
+          quisquam labore adipisci laudantium dolore nihil libero, commodi
+          doloribus eius mollitia voluptate necessitatibus neque temporibus
+          dolor eos autem, voluptatem ipsa magni consequatur doloremque. Odio at
+          nobis voluptate? Facere animi eius iure quidem saepe nemo consequatur
+          odit vero vitae similique magni ea, cupiditate cumque est veniam.
+          Totam, est repudiandae, unde veniam aliquam magni quibusdam explicabo
+          laboriosam distinctio iusto iste.
+        </p>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/ally.js/1.4.1/ally.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
